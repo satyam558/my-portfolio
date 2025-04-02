@@ -1,0 +1,29 @@
+.Resume{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--secondary-color);
+    padding: 6rem 0;
+    margin-bottom: 3%;
+}
+.Resume-title{
+    color: var(--dark-color);
+}
+.cv .download-cv-btn{
+    background-color: #ffcd00; 
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: transform .4s;
+}
+.cv .download-cv-btn:hover{
+    transform: scale(1.2);
+    background: var(--primary-color);
+    opacity: 1;
+    color: var(--secondary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+} 

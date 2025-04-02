@@ -1,0 +1,182 @@
+.qualifications{
+    margin-bottom: 3%;
+    background-color: var(--secondary-color);
+}
+.qualifications-title{
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+.qualifications .qualifications-box .row{
+   width: 100%;
+}
+.qualifications .qualifications-box .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qualifications .nav-pills .nav-item .nav-link {
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 1.0em;
+    margin: -20px 55px 0 55px;
+    border-radius: 0 !important
+}
+.qualifications .nav-pills .nav-item i{
+    color: var(--primary-color);
+}
+
+.qualifications .nav-pills .nav-item .nav-link.active,
+.qualifications .nav-pills .nav-item .nav-link:active,
+.qualifications .nav-pills .nav-item .nav-link:focus {
+    animation: color-change 6s linear infinite;
+    border-bottom: solid 2px #ff1493;
+    background-color: rgba(0, 0, 0, 0);
+}
+@keyframes color-change {
+
+    0%,
+    100% {
+        border-color: #2fb4ae
+    }
+    25% {
+        border-color: #2558ab
+    }
+
+    50% {
+        border-color: #c71f1f
+    }
+
+    75% {
+        border-color: #ffcd00
+    }
+}
+.education-items{
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    padding-bottom: 3%;
+    padding-left: 0rem !important;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+.education-items .row{
+    gap: 20px;
+}
+.cards{
+    flex: 1 0 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards .card{
+    height: 180px;
+    width: 380px;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 28px;
+    padding: 1rem 3%;
+    position: relative;
+    z-index: 1;
+    background-color: var(--light-color);
+    overflow: hidden;
+    color: var(--dark-color);
+    transition: .6s;
+}
+
+.cards .card::after{
+    position: absolute;
+    content: "";
+    height: 40%;
+    width: 8%;
+    top: 30%;
+    right: -4%;
+    background-color: var(--primary-color);
+    border-radius: 28px;
+    z-index: -1;
+    transition: .6s;
+}
+.cards .card:hover{
+    color: var(--light-color);
+}
+.cards .card:hover::after{
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+}
+.cards .card .education-logo{
+    display: flex;
+    flex-direction: row;
+}
+.cards .card .education-logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.ul3 .cards .card .education-logo{
+    gap: 5px;
+}
+.cards .card .education-logo h3{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ /* responive ===========================================================================================================	 */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        font-size: 0.8em;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: -40px 75px 0 75px;;
+    }
+    
+ }
+ 
+ @media (min-width: 460px) and (max-width: 575.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    
+ }
+ @media (min-width: 360px) and (max-width: 459.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .qualifications .qualifications-box .row{
+        --bs-gutter-x: 1rem !important;
+    }
+    .cards .card .education-logo h3{
+        font-size: 1.2rem;
+    }
+    
+ }
+
+ @media (min-width: 0px) and (max-width: 359.98px) {
+    .qualifications .nav-pills .nav-item .nav-link {
+        color: var(--dark-color);
+        font-size: 0.8em;
+        margin: 0px 0px 0 0px;;
+    }
+    .qualifications .qualifications-box .row{
+        --bs-gutter-x: 0.2rem !important;
+    }
+    .cards .card .education-logo h3{
+        font-size: 1rem;
+    }
+    
+ }

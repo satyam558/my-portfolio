@@ -1,0 +1,685 @@
+.home {
+    align-items: center;
+    display: flex;
+    margin-top: 3%;
+    padding: 6rem 0;
+    margin-bottom: 3%;
+    background-color: var(--secondary-color);
+  }
+  
+  .text-warning {
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .say-hi {
+    animation: waving-hand 2.5s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    font-size: 32px;
+  }
+  
+  @keyframes waving-hand {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    10% {
+      transform: rotate(14deg);
+    }
+  
+    20% {
+      transform: rotate(-8deg);
+    }
+  
+    30% {
+      transform: rotate(14deg);
+    }
+  
+    40% {
+      transform: rotate(8.0deg);
+    }
+  
+    50% {
+      transform: rotate(10deg);
+    }
+  
+    60% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .name {
+    color: var(--dark-color);
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .typewrite .wrap {
+    color: #1c2f50
+  }
+  
+  .d-flex .social-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--dark-color);
+    text-decoration: none;
+    margin: 30px 10px;
+    transition: .5s ease;
+    opacity: 0.7;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(.2s*var(--1));
+  }
+  
+  .d-flex .social-icon i:hover {
+    background: var(--primary-color);
+    opacity: 1;
+    color: var(--secondary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+  }
+  
+  
+  /* Triangle shape */
+  .allShape {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    background-color: #f0f0f0;
+  }
+  
+  /* Float Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Float Animation for 45-degree Triangle */
+  @keyframes float45 {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+  
+    50% {
+      transform: rotate(45deg) translateY(10px);
+    }
+  
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+  }
+  
+  /* Triangle with Yellow Border and White Inside */
+  #triangle {
+    position: relative;
+    top: -10%;
+    left: 42%;
+    width: 0px;
+    height: 0px;
+    border-left: 179px solid transparent;
+    border-right: 169px solid transparent;
+    border-bottom: 189px solid var(--dark-color);
+    transform: rotate(45deg);
+    animation: float45 3s infinite ease-in-out;
+  }
+  
+  #triangle::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    /* Offset to create border effect */
+    left: -145px;
+    /* Align white triangle inside */
+    width: 0px;
+    height: 0px;
+    border-left: 145px solid transparent;
+    /* Left Inner White Border */
+    border-right: 139px solid transparent;
+    /* Right Inner White Border */
+    border-bottom: 161px solid var(--light-color);
+    /* Inner White Triangle */
+    transform: rotate(0deg);
+    /* Keep inner triangle straight */
+  }
+  
+  /* Gray Triangle Underneath */
+  #gray-triangle {
+    position: absolute;
+    top: 10px;
+    /* Push it slightly below the main triangle */
+    left: 245px;
+    width: 0;
+    height: 0;
+    border-left: 125px solid transparent;
+    /* Adjust size */
+    border-right: 125px solid transparent;
+    border-bottom: 165px solid var(--primary-color);
+    /* Light gray color */
+    transform: rotate(45deg);
+    z-index: 0;
+    /* Place behind the main triangles */
+    animation: float45 3s infinite ease-in-out;
+    /* Apply float animation */
+  }
+  
+  #box {
+    position: absolute;
+    top: -38px;
+    left: 440px;
+    width: 65px;
+    height: 65px;
+    background-color: var(--primary-color);
+    z-index: 0;
+    animation: float 3s infinite ease-in-out;
+    /* Apply float animation */
+  }
+  
+  #circle {
+    position: absolute;
+    top: 90px;
+    left: 480px;
+    width: 17px;
+    height: 17px;
+    border: 4px solid var(--dark-color);
+    border-radius: 50%;
+    animation: float 3s infinite ease-in-out;
+    /* Apply float animation */
+  }
+  
+  #rectangle {
+    position: absolute;
+    top: 130px;
+    left: 483px;
+    width: 12px;
+    height: 51px;
+    background-color: var(--primary-color);
+    animation: float 3s infinite ease-in-out;
+    /* Apply float animation */
+  }
+  
+  #wave-line {
+    position: absolute;
+    top: 80px;
+    left: 925px;
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  #wave-line::before {
+    content: 'aaaaaaaa';
+    position: absolute;
+    font-size: 30px;
+    color: transparent;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--primary-color);
+    text-decoration-line: underline;
+  }
+  
+  .shape-2 {
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    z-index: 2;
+    animation: translate 10s linear infinite;
+  }
+  
+  @keyframes translate {
+    0% {
+      transform: translatey(0px)
+    }
+  
+    20% {
+      transform: translatey(50px)
+    }
+  
+    60% {
+      transform: rotate(-180deg)
+    }
+  
+    100% {
+      transform: translatey(0px)
+    }
+  }
+  
+  .shape-3 {
+    position: absolute;
+    animation: translatescale 4s linear infinite;
+    top: 15%;
+    left: 2%;
+    z-index: 2;
+  }
+  
+  @keyframes translatescale {
+    0% {
+      transform: translatey(0px)
+    }
+  
+    20% {
+      transform: translatey(50px)
+    }
+  
+    40% {
+      transform: scale(1.2)
+    }
+  
+    80% {
+      transform: rotate(80deg)
+    }
+  
+    100% {
+      transform: translatey(0px)
+    }
+  }
+
+  /* responive ===========================================================================================================	 */
+
+@media (min-width: 1600px) and (max-width: 2199.98px) {
+  #gray-triangle {
+    top: 15px;
+    left: 280px;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+  }
+  
+  #box {
+    top: -27px;
+    left: 470px;
+  }
+  
+  #circle {
+    top: 90px;
+    left: 515px;
+  }
+  
+  #rectangle {
+    top: 130px;
+    left: 517px;
+  }
+  
+  #wave-line {
+    top: 85px;
+    left: 775px;
+  }
+  
+  .shape-2 {
+    top: 50%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+  .shape-2 {
+    top: 65%;
+  }
+
+  #gray-triangle {
+    top: 15px;
+    left: 280px;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+  }
+  
+  #box {
+    top: -27px;
+    left: 470px;
+  }
+  
+  #circle {
+    top: 90px;
+    left: 515px;
+  }
+  
+  #rectangle {
+    top: 130px;
+    left: 517px;
+  }
+  
+  #wave-line {
+    top: 85px;
+    left: 775px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text-warning {
+        font-size: 22px;
+    }
+  
+    .say-hi {
+        font-size: 28px;
+    }
+    .d-flex .social-icon i {
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+    }
+    #triangle {
+        position: relative;
+        top: -5%;
+        left: 37.5%;
+        border-left: 139px solid transparent;
+        border-right: 159px solid transparent;
+        border-bottom: 179px solid var(--dark-color);
+      }
+      
+      #triangle::after {
+        top: 30px;
+        left: -119px;
+        border-left: 119px solid transparent;
+        border-right: 139px solid transparent;
+        border-bottom: 139px solid var(--light-color);
+      }
+      
+      #gray-triangle {
+        top: 10px;
+        left: 170px;
+        border-left: 125px solid transparent;
+        border-right: 125px solid transparent;
+      }
+      
+      #box {
+        top: -15px;
+        left: 350px;
+        width: 45px;
+        height: 45px;
+      }
+      
+      #circle {
+        top: 90px;
+        left: 378px;
+        width: 15px;
+        height: 15px;
+      }
+      
+      #rectangle {
+        top: 130px;
+        left: 380px;
+      }
+      
+      #wave-line {
+        top: 85px;
+        left: 775px;
+        width: 70px;
+        height: 50px;
+      }
+      #x {
+        display: none;
+      }
+
+      .dot-grid {
+        display: none;
+      }
+      .shape-2 {
+        top: 65%;
+      }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text-warning {
+        font-size: 22px;
+    }
+  
+    .say-hi {
+        font-size: 28px;
+    }
+  
+    .d-flex .social-icon i {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+    #triangle {
+        position: relative;
+        top: -3%;
+        left: 9%;
+        border-left: 132px solid transparent;
+        border-right: 122px solid transparent;
+        border-bottom: 129px solid var(--dark-color);
+      }
+      
+      #triangle::after {
+        top: 30px;
+        left: -100px;
+        border-left: 98px solid transparent;
+        border-right: 95px solid transparent;
+        border-bottom: 84px solid var(--light-color);
+      }
+      
+      #gray-triangle {
+        top: 50px;
+        left: 15px;
+        border-left: 99px solid transparent;
+        border-right: 99px solid transparent;
+        border-bottom: 85px solid var(--primary-color);
+      }
+      
+      #box {
+        top: 0px;
+        left: 170px;
+        width: 40px;
+        height: 40px;
+      }
+      
+      #circle {
+        top: 90px;
+        left: 200px;
+        width: 12px;
+        height: 12px;
+      }
+      
+      #rectangle {
+        top: 122px;
+        left: 201px;
+        width: 10px;
+        height: 40px;
+      }
+      
+      #wave-line {
+        display: none;
+      }
+      
+  .shape-2 {
+    top: 38%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text-warning {
+        font-size: 18px;
+    }
+  
+    .say-hi {
+        font-size: 25px;
+    }
+  
+    .d-flex .social-icon i {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    #triangle {
+        display: none;
+      }
+      
+      #triangle::after {
+        display: none;
+      }
+      
+      #gray-triangle {
+        display: none;
+      }
+      
+      #box {
+        display: none;
+      }
+      
+      #circle {
+        display: none;
+      }
+      
+      #rectangle {
+        display: none;
+      }
+      
+      #wave-line {
+        display: none;
+      }
+      
+  .shape-2 {
+    top: 53%;
+  }
+  .shape-3 {
+    top: 8%;
+  }
+
+}
+@media (min-width: 400px) and (max-width: 575.98px) {
+  
+    .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content-item{
+        margin-left: 30px;
+    }
+    .text-warning {
+      font-size: 16px;
+   }
+
+  .say-hi {
+      font-size: 20px;
+  }
+
+  .d-flex .social-icon i {
+      width: 30px;
+      height: 30px;
+      font-size: 19.5px;
+  }
+    #triangle {
+        display: none;
+      }
+      
+      #triangle::after {
+        display: none;
+      }
+      
+      #gray-triangle {
+        display: none;
+      }
+      
+      #box {
+        display: none;
+      }
+      
+      #circle {
+        display: none;
+      }
+      
+      #rectangle {
+        display: none;
+      }
+      
+      #wave-line {
+        display: none;
+      }
+      
+     .shape-2 {
+        top: 50%;
+     }
+     .shape-3 {
+      top: 6%;
+    }
+  
+}
+@media (min-width: 0px) and (max-width: 399.98px) {
+  
+    .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content-item{
+        margin-left: 30px;
+    }
+    .text-warning {
+      font-size: 16px;
+   }
+  .say-hi {
+      font-size: 20px;
+  }
+  .name {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .d-flex .social-icon i {
+      width: 30px;
+      height: 30px;
+      font-size: 19.5px;
+  }
+    #triangle {
+        display: none;
+      }
+      
+      #triangle::after {
+        display: none;
+      }
+      
+      #gray-triangle {
+        display: none;
+      }
+      
+      #box {
+        display: none;
+      }
+      
+      #circle {
+        display: none;
+      }
+      
+      #rectangle {
+        display: none;
+      }
+      
+      #wave-line {
+        display: none;
+      }
+      
+     .shape-2 {
+        top: 50%;
+     }
+     .shape-3 {
+      top: 6%;
+    }
+  
+}

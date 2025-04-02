@@ -1,0 +1,152 @@
+ .contact-me{
+     background-color: var(--secondary-color);
+     padding-bottom: 6rem;
+ }
+ .contact-me .display-5{
+    color: var(--dark-color);
+ }
+ .contact-box .contact-detials .display-5 span{
+     color: var(--primary-color);
+ } 
+ .contact-lists{
+     list-style: none;
+     padding: 0 48px;
+ }
+ .contact-lists .contact-list a{
+     text-decoration: none;
+     color: var(--dark-color);
+ }
+ .contact-lists .contact-list i{
+    color: var(--primary-color);
+ }
+ .contact-me .row .col-lg-6 .icon-item{
+    padding-left: 2.3rem !important;
+ }
+ .d-flex .social-icon i {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 50px;
+     background: var(--primary-color);
+     border: 2px solid var(--primary-color);
+     border-radius: 50%;
+     font-size: 30px;
+     color: var(--dark-color);
+     text-decoration: none;
+     margin: 30px 10px;
+     transition: .5s ease;
+     opacity: 0.7;
+     animation: slideleft 1s ease forwards;
+     animation-delay: calc(.2s*var(--1));
+   }
+   
+   .d-flex .social-icon i:hover {
+     background: var(--primary-color);
+     opacity: 1;
+     color: var(--secondary-color);
+     box-shadow: 0 0 20px var(--primary-color);
+   }
+   .contact-form form{
+     position: relative;
+     padding-top: 80px;
+     padding-left: px;
+     padding-right: 0;
+ }
+ .contact-form form input{
+     border: none;
+     outline: none;
+     width: 80%;
+     padding: 18px;
+     background: #555557;
+     color: #000;
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 0.5rem;
+     border-radius: 0.5rem;
+ }
+ .contact-form form textarea{
+     border: none;
+     outline: none;
+     width: 80%;
+     padding: 18px;
+     background: #555557;
+     color: #000;
+     font-size: 1rem;
+     font-weight: 500;
+     margin-bottom: 0.5rem;
+     border-radius: 0.5rem;
+ }
+ .contact-form form textarea{
+     resize: none;
+     height: 100px;
+ }
+ .contact-form form .send{
+     display: inline-block;
+     padding: 14px 60px;
+     background: var(--primary-color);
+     border-radius: 40px;
+     font-size: 18px;
+     color: #081b29;
+     letter-spacing: 1px;
+     text-decoration: none;
+     font-weight: 600px;
+     animation: slideTop 1s ease forwards;
+     animation-delay: 2s;
+     box-shadow: 0 0 5px var(--primary-color), 0 0 25px var(--primary-color);
+ }
+ .contact-form form .send:hover{
+     box-shadow: 0 0 5px #ffcd00,
+     0 0 25px #ffcd00,0 0 50px #ffcd00,
+     0 0 100px #ffcd00, 0 0 200px #ffcd00;
+ }
+
+  /* responive ===========================================================================================================	 */
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .d-flex .social-icon i {
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+    .d-flex .social-icon i {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  
+    .d-flex .social-icon i {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 360px) and (max-width: 575.98px) {
+  .d-flex .social-icon i {
+      width: 30px;
+      height: 30px;
+      font-size: 19.5px;
+  }
+  
+}  
+@media (min-width: 0px) and (max-width: 359.98px){
+    .contact-lists .contact-list a{
+        font-size: 9px;
+    }
+    .d-flex .social-icon i {
+        width: 30px;
+        height: 30px;
+        font-size: 19.5px;
+    }
+    .contact-form form .send{
+        padding: 14px 50px;
+    }
+} 
+
+   

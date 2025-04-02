@@ -1,0 +1,261 @@
+.about-me {
+    background-color: var(--secondary-color);
+    margin-bottom: 3%;
+    padding-bottom: 4.5rem;
+}
+.display-5{
+    color: var(--dark-color);
+}
+.challenge {
+    font-size: 20px;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: bg-change 6s linear infinite;
+}
+
+.about-me .about-box {
+    border-radius: 20px;
+    background-color: var(--light-color);
+    box-shadow: 0px 3px 10px 0px rgba(28, 47, 80, .08);
+}  
+.about-image{
+    padding: 3rem 0px 0rem 7rem !important;
+}
+.about-image img {
+    width: 310px; 
+    height: 400px; 
+    border-radius: 50%; 
+    object-fit: cover; /* Ensure the image fills the circle without distortion */
+    z-index: -1px;  
+}
+.about-me .image-round::before {
+    content: "";
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    animation: bg-change 6s linear infinite;
+    border-radius: 100%;
+    opacity: .5;
+    left: 50px;
+    top: 22px
+}
+
+.about-me .about-image {
+    position: relative
+}
+
+.about-me .about-image img {
+    z-index: 999
+}
+
+
+@keyframes bg-change {
+
+    0%,
+    100% {
+        background-color: #2fb4ae
+    }
+
+    25% {
+        background-color: #2558ab
+    }
+
+    50% {
+        background-color: #c71f1f
+    }
+
+    75% {
+        background-color: #ffcd00
+    }
+}
+ /* responive ===========================================================================================================	 */
+ @media (min-width: 1200px) and (max-width: 1599.98px) {
+    .about-me .image-round::before {
+        height: 400px;
+        width: 400px;
+        left: 100px;
+        top: 40px;
+    }
+    .about-image{
+        padding: 4rem 0px 0rem 8rem !important;
+    }
+    .about-image img {
+        width: 300px; 
+        height: 350px;
+    }
+    
+    .challenge{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 15px;
+    }
+ }
+
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-me .image-round::before {
+        height: 400px;
+        width: 400px;
+        left: 50px;
+        top: 30px;
+    }
+    .about-image{
+        padding: 4rem 0px 0rem 7rem !important;
+    }
+    .about-image img {
+        width: 265px; 
+        height: 350px;
+    }
+    
+    .challenge{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 13px;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .about-me .image-round::before {
+        height: 400px;
+        width: 400px;
+        left: 23.5%;
+        top: 55px;
+    } 
+    .about-image{
+        padding: 7rem 0px 0rem 14.8rem !important;
+    }
+    .about-image img {
+        width: 250px; 
+        height: 300px;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .about-me .image-round::before {
+        height: 400px;
+        width: 400px;
+        left: 13%;
+        top: 20px;
+    }
+    .about-image{
+        padding: 5rem 0px 0rem 8.8rem !important;
+    }
+    .about-image img {
+        width: 250px; 
+        height: 300px;
+    }
+ }
+ 
+ @media (min-width: 460px) and (max-width: 575.98px) {
+    .about-me .image-round::before {
+        height: 350px;
+        width: 350px;
+        left: 18%;
+        top: 8px;
+    }
+    .about-image{
+        padding: 3.5rem 0px 0rem 9.6rem !important;
+    }
+    .about-image img {
+        width: 220px; 
+        height: 270px;
+    }
+    .challenge{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 12px;
+    }
+ }
+ @media (min-width: 400px) and (max-width: 459.98px) {
+    .about-me .image-round::before {
+        height: 300px;
+        width: 300px;
+        left: 15%;
+        top: 8px;
+    }
+    .about-image{
+        padding: 2.5rem 0px 0rem 7.5rem !important;
+    }
+    .about-image img {
+        width: 200px; 
+        height: 250px;
+    }
+    .challenge{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 12px;
+    }
+ }
+ @media (min-width: 360px) and (max-width: 399.98px){
+    .about-me .image-round::before {
+        height: 280px;
+        width: 280px;
+        left: 11%;
+        top: 8px;
+    }
+    .about-image{
+        padding: 2rem 0px 0rem 5.6rem !important;
+    }
+    .about-image img {
+        width: 175px; 
+        height: 220px;
+    }
+    .challenge{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 12px;
+    }
+ } 
+ @media (min-width: 260px) and (max-width: 359.98px){
+    .about-me .image-round::before {
+        height: 220px;
+        width: 220px;
+        left: 9%;
+        top: 8px;
+    }
+    .about-image{
+        padding: 1rem 0px 0rem 2.6rem !important;
+    }
+    .about-image img {
+        width: 155px; 
+        height: 200px;
+    }
+    .challenge{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 12px;
+    }
+ } 
+ @media (min-width: 0px) and (max-width: 259.98px){
+    .about-me .image-round::before {
+        height: 200px;
+        width: 200px;
+        left: 9%;
+        top: 8px;
+    }
+    .about-image{
+        padding: 1rem 0px 0rem 2.6rem !important;
+    }
+    .about-image img {
+        width: 140px; 
+        height: 180px;
+    }
+    .challenge{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .fs-14{
+        font-size: 12px;
+    }
+ } 
